@@ -1,0 +1,93 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Typography */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+p#fact {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: #444;
+}
+
+/* Button Styling */
+button#getFactBtn {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button#getFactBtn:hover {
+  background-color: #4338ca;
+}
+
+/* Fact History List */
+ul#factHistory {
+  margin-top: 1rem;
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+ul#factHistory li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p#fact, h2 {
+    font-size: 1rem;
+  }
+
+  button#getFactBtn {
+    width: 100%;
+  }
+}
